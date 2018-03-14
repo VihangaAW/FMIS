@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JasperFMORep_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4c777a2-0c0b-4f04-bcf4-f421b0e0b177">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="MongoDbQuery">
+		<![CDATA[{
+    'collectionName' : 'furnitureItems',
+    'findFields' : {
+}
+}
+]]>
+	</queryString>
+	<field name="Building" class="java.lang.String"/>
+	<field name="Campus" class="java.lang.String"/>
+	<field name="Drawing Name" class="java.lang.String"/>
+	<field name="Floor" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.02.Acquisition date" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.02.Barcode" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.02.Cost" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.02.Description" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.03.Acquisition date" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.03.Barcode" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.03.Cost" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.03.Description" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.04.Acquisition date" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.04.Barcode" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.04.Cost" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.04.Description" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.1.Acquisition date" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.1.Barcode" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.1.Cost" class="java.lang.String"/>
+	<field name="RoomDetails.Furniture Assets.1.Description" class="java.lang.String"/>
+	<field name="RoomDetails.Occupant" class="java.lang.String"/>
+	<field name="RoomDetails.Occupying Dept" class="java.lang.String"/>
+	<field name="RoomDetails.Room" class="java.lang.String"/>
+	<field name="RoomDetails.Space Code" class="java.lang.String"/>
+	<field name="RoomDetails.Space Type" class="java.lang.String"/>
+	<field name="RoomDetails.UFA" class="java.lang.String"/>
+	<field name="_id" class="org.bson.types.ObjectId"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="168" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="100" height="20" uuid="8d19aa69-544f-4b82-9f79-c16f0d2cf959"/>
+				<textFieldExpression><![CDATA[$F{Campus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="20" width="100" height="20" uuid="dcfd3793-163f-4978-9350-0f35031d2316"/>
+				<textFieldExpression><![CDATA[$F{Building}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="40" width="100" height="15" uuid="b43622a3-7879-4a0e-9314-82b6ddc08cef"/>
+				<textFieldExpression><![CDATA[$F{Floor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="55" width="100" height="20" uuid="60c97aa8-fe50-46c7-93c6-80fac1705f1f"/>
+				<textFieldExpression><![CDATA[$F{Drawing Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="90" width="130" height="20" uuid="faadf10c-8256-4422-ac51-39f67e3b925a"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Room}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="110" width="140" height="15" uuid="bde83a62-a441-4028-81c7-1529c62786b4"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Occupying Dept}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="125" width="160" height="15" uuid="9e7f71d9-e569-4212-a576-d547b6c5610e"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Occupant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="92" width="100" height="17" uuid="fadbfbb7-bb12-4b2a-83e2-e6e21241a088"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Space Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="111" width="100" height="13" uuid="56c5b2ee-66cc-44fa-9c36-d8ef15f962bc"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Space Code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="124" width="100" height="16" uuid="bc6f5168-16e3-4d60-918a-2fe9aea1277e"/>
+				<textFieldExpression><![CDATA[$F{RoomDetails.UFA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="2" width="90" height="73" uuid="80224b09-59be-4ff1-ad7f-6155ee8123ca"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Campus Building        Floor        Drawing Name						]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="90" width="90" height="73" uuid="60e04da0-61f9-400f-ac3e-cffa138f50f8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Room Ocupying Dept.        Occupant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="90" width="90" height="73" uuid="ee5eee76-84fe-4404-a524-a84e52e16153"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Space Type Space Code        UFA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="30" uuid="21f43e8d-2b40-48e6-a345-b744168cca46">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a3f0512-0eb2-420d-aaaa-0e58d90d5b69"/>
+				</reportElement>
+				<text><![CDATA[Barcode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="20" width="100" height="30" uuid="ec506982-a026-4d6c-b88f-43eca2f0342d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de4c602f-820c-4e57-b7e4-e527324910cc"/>
+				</reportElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="20" width="100" height="30" uuid="c1113aa4-6408-4fe2-95d5-950b04d5f2f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c27bf9d-ee05-46ce-8628-a9536b529ba8"/>
+				</reportElement>
+				<text><![CDATA[Acquisition date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="20" width="100" height="30" uuid="2b38794e-30a2-4392-bbf8-b0b9c6f0ea96">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cef96db-b3b5-41c9-b9a8-2e7c9e9bc3e2"/>
+				</reportElement>
+				<text><![CDATA[Cost]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="140" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="1f9457d4-af38-40d8-80f7-b3b39f449f19">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="056573aa-7bc5-4bc3-977f-159ba0fbe101"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.1.Barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="100" height="20" uuid="06b39f0f-18ac-4865-88e7-2176f5bfd9d9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4deafdc6-0a91-40ed-a4c6-d54980302d34"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.04.Barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="100" height="20" uuid="8cc974ff-b5cb-45fa-a4ed-191a16a0ec0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fe69390-4ecd-414d-b913-3b3a6078c6c2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.03.Barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="100" height="20" uuid="45c4c4f8-be4a-4cba-8cdf-6d2b6e37d9cf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a3f0512-0eb2-420d-aaaa-0e58d90d5b69"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.02.Barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="20" uuid="6e57d7ba-d266-49f0-a7aa-88db5a745ab2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c2b5908-109f-46b8-901e-678516872d48"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.1.Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="20" width="100" height="20" uuid="e5e432d2-f21a-4a62-b2b0-92e397c813f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ab73d69-ecca-4665-8d41-c9b6324f83d1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.04.Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="40" width="100" height="20" uuid="4dc9ca63-1477-493b-96b3-39f51af58c92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4a299e02-5dae-4364-81d4-6c4a858c4c99"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.03.Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="60" width="100" height="20" uuid="b9c8d92a-2913-4394-834b-16b41f47f8b9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de4c602f-820c-4e57-b7e4-e527324910cc"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.02.Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="0" width="100" height="20" uuid="2c191fd3-15a1-4b33-b51c-01e23da99ec5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a837645a-ea66-4d7f-ac1c-a2c4815d6ef3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.1.Acquisition date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="20" width="100" height="20" uuid="b6f11e0a-49e5-421a-9590-977a4f7299cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c657e3-2e8e-4107-b50b-bf3fb8f13d11"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.04.Acquisition date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="40" width="100" height="20" uuid="0e817d42-9a4b-49c8-85d1-d85f2dc69d69">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2f2b5e7-e241-474c-b31b-249a551bc896"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.03.Acquisition date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="60" width="100" height="20" uuid="64bc0d54-f7ef-4a83-bb92-8c50dc982dac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c27bf9d-ee05-46ce-8628-a9536b529ba8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.02.Acquisition date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="100" height="20" uuid="59f8034b-d925-49d9-955c-64e6dd29ad8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1bd525b9-e03a-4f7a-b2ae-43ef8086425c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.1.Cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="20" width="100" height="20" uuid="f48ccd3f-afc0-4af5-8402-c0bff7f93e5b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a60a5e73-3906-43e8-b4a4-8c202b469c8b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.04.Cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="40" width="100" height="20" uuid="0ea4a8bd-9e0c-4c43-9f2a-3c9c54b4395f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bf93027e-b4ad-4e00-9512-3d1ef5a93150"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.03.Cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="60" width="100" height="20" uuid="0376c0ed-1a37-4075-8152-194051f1539b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cef96db-b3b5-41c9-b9a8-2e7c9e9bc3e2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomDetails.Furniture Assets.02.Cost}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
